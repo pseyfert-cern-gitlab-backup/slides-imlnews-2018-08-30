@@ -91,6 +91,7 @@ def create_repo():
 
     if WorldPublic:
         try:
+            my_run(["git", "rm", "LICENSE.md"])
             my_run(["git", "mv", "LICENSE.pub.md", "LICENSE.md"])
             my_run(["git", "rm", "LICENSE.int.md"])
         except subprocess.CalledProcessError:
@@ -101,6 +102,7 @@ def create_repo():
                 raise
     else:
         try:
+            my_run(["git", "rm", "LICENSE.md"])
             my_run(["git", "mv", "LICENSE.int.md", "LICENSE.md"])
             my_run(["git", "rm", "LICENSE.pub.md"])
         except subprocess.CalledProcessError:
