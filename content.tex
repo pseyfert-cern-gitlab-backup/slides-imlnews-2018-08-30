@@ -1,14 +1,22 @@
 \maketitle
 
+\setbeamertemplate{background canvas}{\includegraphics[width=\paperwidth,height=\paperheight]{./5_04_001.JPG}}
 \begin{frame}
   \frametitle{Machine Learning related sessions at summer conferences}
-  \begin{itemize}
-    \item \myhref{https://indico.cern.ch/event/686555/sessions/276026/\#20180705}{ICHEP}
-    \item \myhref{https://indico.cern.ch/event/587955/sessions/266675/\#all}{CHEP}
-    \item \myhref{https://indico.cern.ch/event/649482/sessions/275331/\#20180717}{BOOST}
-    \item \myhref{https://indico.cern.ch/event/648004/sessions/266239/\#20180802}{QCHS}
-  \end{itemize}
+  \begin{columns}
+    \begin{column}{.35\textwidth}
+        \begin{block}{ }
+          \begin{itemize}
+            \item \myhrefb{https://indico.cern.ch/event/686555/sessions/276026/\#20180705}{ICHEP}
+            \item \myhrefb{https://indico.cern.ch/event/587955/sessions/266675/\#all}{CHEP}
+            \item \myhrefb{https://indico.cern.ch/event/649482/sessions/275331/\#20180717}{BOOST}
+            \item \myhrefb{https://indico.cern.ch/event/648004/sessions/266239/\#20180802}{QCHS}
+          \end{itemize}
+        \end{block}
+    \end{column}
+  \end{columns}
 \end{frame}
+\beamertemplateshadingbackground{Black!03}{White}
 
 \begin{frame}
   \frametitle{upcoming events}
@@ -36,14 +44,16 @@
       {~}
       \vspace{.5\textheight}
       \begin{columns}
-        \begin{column}{.8\textwidth}
+        \begin{column}{.35\textwidth}
         \end{column}
-        \begin{column}{.2\textwidth}
+        \begin{column}{.65\textwidth}
           \begin{block}{}
             \IfFileExists{./QR2.png}{
               \footnotesize{slides (excl.\ cern logo) will appear on}
 
-              \gitlablink\includegraphics[width=.2\textwidth]{./QR2.png}
+              \gitlablink
+
+              \includegraphics[width=.2\textwidth]{./QR2.png}
             }{}
           \end{block}
         \end{column}
